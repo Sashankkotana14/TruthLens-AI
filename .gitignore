@@ -1,3 +1,4 @@
+
 # Python Virtual Environments
 .venv/
 .venv-1/
@@ -25,7 +26,11 @@ npm-debug.log*
 .env.*
 !.env.example
 
-# Evidence Vault Generated Files (Preserve structure, avoid committing transient test runs)
+# Private keys and certificates
+*.pem
+*.key
+
+# Evidence Vault Generated Files
 truthlens_backend/vault/originals/*
 !truthlens_backend/vault/originals/.gitkeep
 truthlens_backend/vault/artifacts/*
@@ -40,7 +45,7 @@ unanimous_app/
 unanimous_changed_files.zip
 
 # Vercel & Editor
-.vercel
+.vercel/
 .vscode/
 .idea/
 *.swp
